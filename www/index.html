@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>RoboPi</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="jquery/jquery.mobile-1.2.0.min.css" />
+        <script src="jquery/jquery-1.8.3.min.js"></script>
+        <script src="jquery/jquery.mobile-1.2.0.min.js"></script>
+	<script src="jquery/robot.js"></script>
+	<script src="jquery/webcam.js"></script>
+<style>
+  .ui-page { background: gray;}
+</style>
+</head>
+<body onload="createImageLayer();">
+<div data-demo-html="true" align='center' id="status">
+<a href="#" id="forward" data-act="forward" data-mini="true" data-role="button" data-icon="arrow-u" data-iconpos="top" data-inline="true">Forward</a><br />
+<a href="#" id="left" data-act="left" data-mini="true" data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true">Left</a>
+<a href="#" id="stop" data-act="stop" data-mini="true" data-role="button" data-inline="true">Stop</a>
+<a href="#" id="right" data-act="right" data-mini="true" data-role="button" data-icon="arrow-r" data-iconpos="right" data-inline="true">Right</a><br />
+<a href="#" id="backward" data-act="backward" data-mini="true" data-role="button" data-icon="arrow-d" data-iconpos="bottom" data-inline="true">Backward</a>
+<div align='center' id="webcam"><noscript><img src="/webcam/?action=snapshot" /></noscript></div>
+</body>
+</html>
